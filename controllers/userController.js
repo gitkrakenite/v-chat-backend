@@ -37,6 +37,7 @@ const registerUser = asyncHandler(async (req, res) => {
     res
       .status(400)
       .json({ message: "Someone is using that username. Create another one" });
+    return;
   }
 
   const user = await User.create({

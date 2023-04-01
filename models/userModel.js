@@ -16,7 +16,7 @@ const userSchema = mongoose.Schema(
       required: true,
       default: false,
     },
-    isPaid: { type: Boolean, default: false },
+    isPaid: { type: Boolean, default: true },
   },
   { timestaps: true }
 );
